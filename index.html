@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fariana Hernandez Peluquería y Cuidado de tus mascotas </title>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="public/all.min.css">
+    <link rel="stylesheet" href="public/custom.css">
+</head>
+<body class="font-quicksand">
+    
+    <header>
+        <nav class="flex items-center justify-between flex-wrap bg-pink-300 p-6 shadow-md">
+
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+              <img src="public/img/mascotas.svg" class="w-12" alt="Logo Fariana Hernandez" >
+              <!-- <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg> -->
+              <span class="text-base font-semibold  tracking-tight menu-name">Fariana Hernandez - Cuidado de Mascotas</span>
+
+            </div>
+
+            <div class="block lg:hidden">
+              <button class="flex items-center px-3 py-2 text-white hover:text-white hover:border-white outline-none" id="button">
+                <svg class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+              </button>
+            </div>
+
+            <div class="w-full lg:flex lg:items-center lg:w-auto sm:hidden md:hidden xs-flex  menu" id="menu">
+              <div class="text-md lg:flex-grow sm:text-center xs-text-center ">
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-pink-400 mr-4 transition-colors duration-700 ease-in-out">
+                  Inicio
+                </a>
+                <a href="#servicio" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-pink-400 mr-4 transition-colors duration-700 ease-in-out">
+                  Servicios
+                </a>
+                <a href="#trabajos" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-pink-400 mr-4 transition-colors duration-700 ease-in-out">
+                  Trabajos
+                </a>
+                <a href="blog.html" target="_blank" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-pink-400 mr-4 transition-colors duration-700 ease-in-out">
+                  Blog
+                </a>
+                <a href="#eventos"  class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-pink-400 mr-4 transition-colors duration-700 ease-in-out">
+                  Eventos
+                </a>
+                <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-pink-400 transition-colors duration-700 ease-in-out">
+                  Tips
+                </a>
+              </div>
+              
+            </div>
+
+          </nav>
+    </header>
+
+    <section class="hero-section relative ">
+
+        <div class="custom-tip opacity-0 absolute z-50 top-0 right-0 m-3 bg-pink-300 w-1/4 lg:w-1/4 md:w-1/2 border-2 border-white rounded shadow-md  ">
+          <div class="flex">
+            <!-- <div class="py-2 px-1"><svg class="fill-current h-6 w-6 text-white mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div> -->
+            <div class="py-2 px-1 bg-white">
+              <span class="fill-current h-6 w-6 text-pink-300 px-3"><i class=" -rotate-45 fas fa-thumbtack"></i></span>
+              
+            </div>
+            <div>
+              <p class="font-bold pl-2 py-2 text-white">¡Tip del día!</p>
+              <p class="text-sm pl-2 pb-2 text-white">Mira como puedes cuidar a tus mascotas. <a href="#" class="font-bold" target="_blank">Ver Más</a></p>
+              
+            </div>
+            <span class="text-white text-md cursor-pointer pr-2 pt-2 inline" id="close"><i class="fas fa-times"></i></span>
+            
+          </div>
+        </div>
+
+        <div class="text-hero absolute z-20 w-full h-full flex justify-center ">
+          <p class="text-white font-semibold text-4xl md:text-2xl mt-40 md:mt-20  sm:mt-10" id="text-hero">Todo para el cuidado de tu mascota</p>
+        </div>
+
+        <img src="public/img/pets.jpg" class="w-full rounded-b-lg" alt="">
+    </section>
+
+    <section class="servicio p-6" id="servicio">
+
+        <h2 class="text-left text-5xl -center font-semibold  text-pink-400" >Servicios</h2>
+        
+        <div class="flex mb-6">
+
+            <div class="w-1/2 relative img-servicios">
+                <div class="absolute w-full h-full z-10 top-0 left-0  bg-gradient-to-l from-white  to-transparent rounded"></div>
+                <img src="public/img/servicios-cat.jpg" class="rounded" alt="">
+            </div>
+
+            <div class="w-1/2 text-center my-auto info-servicios">
+                <span class="text-2xl text-pink-500"><i class="fas fa-cut"></i></span>
+                <h3 class="text-pink-400 text-4xl md:text-lg mb-4 md:mb-2">Realizo</h3>
+                <p class="text-lg md:text-sm">Corte de Uñas</p>
+                <p class="text-lg md:text-sm">Cepillado de Dientes</p>
+                <p class="text-lg md:text-sm">Limpieza de Oídos</p>
+                <p class="text-lg md:text-sm">Baños Medicados Antialérgicos y Antipulgas</p>
+                <p class="text-lg md:text-sm">Cortes de Cada Raza</p>
+                <p class="text-lg md:text-sm">Manejo de Ansiedad en Caninos y Felinos</p>
+                <p class="text-lg md:text-sm">Asesoría en problemas de comportamiento</p>
+               
+                
+            </div>
+            
+
+        </div>
+
+        <div class="flex">
+            <div class="w-1/2 text-center my-auto info-horarios">
+                
+                <span class="text-2xl text-pink-500"><i class="fas fa-clock"></i></span>
+                <h3 class="text-pink-400 text-4xl md:text-lg mb-4 md:mb-2">Horarios</h3>
+                <p class="text-xl">Lunes a Viernes</p>
+                <p class="text-xl mb-3">de 8:00 a.m. a 5:00 p.m</p>
+                <span class="text-white md:text-sm font-semibold bg-pink-400 p-1 rounded">*Algunos horarios y días requiren apartado de cita.</span>
+                <p class="text-pink-500 my-5 text-3xl"> <a href="tel:+573146780602">Comunícate: 3146780602</a> </p>
+            </div>
+
+            <div class="w-1/2 relative img-horarios ">
+                <div class="absolute w-full h-full z-10 top-0 left-0  bg-gradient-to-r from-white  to-transparent rounded"></div>
+                <img src="public/img/servicios-dog.jpg" class="rounded" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="divide-y divide-pink-300 p-6">
+        <div class=""></div>
+        <div class=""></div>
+        
+    </div>
+
+
+    <section class="trabajos p-6" id="trabajos">
+        <h2 class="text-right text-5xl font-semibold  text-pink-400" >Mis Trabajos</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-2  place-content-center gap-2">
+            
+            <div class=" rounded overflow-hidden shadow-lg works relative ">
+
+                <div class="absolute w-full h-full z-10 top-0 left-0  bg-gradient-to-t from-pink-600  to-transparent rounded overlay-work"></div>
+                
+                <img class="w-full" src="public/img/pets.jpg" alt="Sunset in the mountains">
+
+                <a href="trabajos.html" target="_blank" class="absolute z-20 font-semibold pl-3 text-white link-work" >Lorem, ipsum.</a>
+
+            </div>
+
+            <div class=" rounded overflow-hidden shadow-lg works relative ">
+
+                <div class="absolute w-full h-full z-10 top-0 left-0  bg-gradient-to-t from-pink-600  to-transparent rounded overlay-work"></div>
+                
+                <img class="w-full" src="public/img/pets.jpg" alt="Sunset in the mountains">
+
+                <a href="trabajos.html" target="_blank" class="absolute z-20 font-semibold pl-3 text-white link-work" >Lorem, ipsum.</a>
+
+            </div>
+
+            <div class=" rounded overflow-hidden shadow-lg works relative ">
+
+                <div class="absolute w-full h-full z-10 top-0 left-0  bg-gradient-to-t from-pink-600  to-transparent rounded overlay-work"></div>
+                
+                <img class="w-full" src="public/img/pets.jpg" alt="Sunset in the mountains">
+
+                <a href="trabajos.html" class="absolute z-20 font-semibold pl-3 text-white link-work" >Lorem, ipsum.</a>
+
+            </div>
+
+            <div class=" rounded overflow-hidden shadow-lg works relative ">
+
+                <div class="absolute w-full h-full z-10 top-0 left-0  bg-gradient-to-t from-pink-600  to-transparent rounded overlay-work"></div>
+                
+                <img class="w-full" src="public/img/pets.jpg" alt="Sunset in the mountains">
+
+                <a href="trabajos.html" class="absolute z-20 font-semibold pl-3 text-white link-work" >Lorem, ipsum.</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="divide-y divide-pink-300 p-6">
+        <div class=""></div>
+        <div class=""></div>
+        
+    </div>
+
+    <section class="p-6  entradas-blog">
+
+        <h2 class="text-left text-5xl font-semibold  text-pink-400" >Nuevos Artículos</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 gap-2">
+          
+            <div class="rounded overflow-hidden shadow-lg ">
+                <img class="w-full" src="public/img/pets.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                  <p class="text-gray-700 text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                  <a href="post-1.html" target="_blank" class="text-pink-400 float-right my-2 font-bold">Ver Artículo</a>
+                </div>
+                
+            </div>
+
+            <div class="rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="public/img/pets.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                  <p class="text-gray-700 text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                  <a href="post-2.html" target="_blank" class="text-pink-400 float-right my-2 font-bold">Ver Artículo</a>
+                </div>
+                
+            </div>
+
+            <div class="rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="public/img/pets.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                  <p class="text-gray-700 text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                </div>
+                
+            </div>
+
+            <div class="rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="public/img/pets.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                  <p class="text-gray-700 text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                </div>
+                
+            </div>
+
+        </div>
+        
+        
+
+    </section>
+
+    
+    <!-- <div class="divide-y divide-pink-300 p-6">
+        <div class=""></div>
+        <div class=""></div>
+        
+    </div> -->
+
+    <section class="eventos bg-pink-300 p-6 rounded-t-lg" id="eventos">
+        <h2 class="text-right text-5xl font-semibold text-white" >Eventos</h2>
+        <div class="grid place-content-center grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-2">
+
+            <div class=" w-full lg:max-w-full lg:flex">
+                <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('public/img/pets.jpg')" title="Woman holding a mug">
+                </div>
+                <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                  <div class="">
+                    
+                    <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+                    <p class="text-gray-700 text-base"><span class="text-pink-800 pr-2"><i class="fas fa-map-marker-alt"></i></span> Lugar: Lorem ipsum dolor sit amet.</p>
+                    <p class="text-gray-700 text-base"><span class="text-pink-800 pr-2"><i class="fas fa-calendar"></i></span> Fecha: 29/09/2020</p>
+                    <p class="text-gray-700 text-base"><span class="text-pink-800 pr-2"><i class="fas fa-clock"></i></span> Hora: 2:00 p.m. a 5:00 p.m.</p>
+                    <p class="mt-4">Información: </p>
+                    <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod ut, commodi iusto non culpa distinctio eius magni repudiandae molestiae?</p>
+
+                    <a href="eventos.html" class="text-pink-400 mt-2 font-bold" target="_blank" rel="noopener noreferrer">Más información</a>
+                  </div>
+                  
+                </div>
+            </div>
+
+            <div class=" w-full lg:max-w-full lg:flex">
+                <div class="h-48 lg:h-auto  lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('public/img/pets.jpg')" title="Woman holding a mug">
+                </div>
+                <div class="border-r border-b  border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                  <div class="mb-8">
+                    
+                    <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+                    <p class="text-gray-700 text-base"><span class="text-pink-800 pr-2"><i class="fas fa-map-marker-alt"></i></span> Lugar: Lorem ipsum dolor sit amet.</p>
+                    <p class="text-gray-700 text-base"><span class="text-pink-800 pr-2"><i class="fas fa-calendar"></i></span> Fecha: 29/09/2020</p>
+                    <p class="text-gray-700 text-base"><span class="text-pink-800 pr-2"><i class="fas fa-clock"></i></span> Hora: 2:00 p.m. a 5:00 p.m.</p>
+                    <p class="mt-4">Información: </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod ut, commodi iusto non culpa distinctio eius magni repudiandae molestiae?</p>
+                  </div>
+                  
+                </div>
+            </div>
+        </div>
+      </section>
+      <footer class="p-6 bg-pink-400 text-center">
+          <h5 class="text-white">Fariana Hernandez - 
+              Cuidado de Mascotas  &copy;<span id="year"></span>
+          </h5>
+      </footer>
+
+
+    <script src="public/js/all.min.js"></script>
+    <script src="public/js/anime.min.js"></script>
+    <script src="public/js/scripts.js"></script>
+  </body>
+</html>
