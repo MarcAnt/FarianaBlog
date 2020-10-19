@@ -41,7 +41,15 @@ html {
 }
 
 
+@media(max-width: 768px) {
+    .img-content-modal {
+        width: 95%;
+    }
 
+    .btn-close {
+        top: 15px; 
+    }
+}
 
 
 @media(max-width: 639px) {
@@ -95,6 +103,17 @@ html {
 
     .info-horarios, .info-servicios {
         width: 100%;
+    }
+
+
+    /*Estilos del modal*/
+    .img-content-modal {
+        width: 80%;
+        height: auto !important; 
+    }
+
+    .btn-close {
+        top:200px !important; 
     }
 
 }

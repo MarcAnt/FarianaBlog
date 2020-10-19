@@ -81,13 +81,37 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
 
-    if (window.innerWidth < 768 ) {
+    // if (window.innerWidth < 768 ) {
+
+    //     menu.classList.remove('xs-flex')
+
+    //     btn.addEventListener('click', e => {
+
+            
+    //         menu.classList.toggle('xs-flex')
+           
+    //         // fadeIn(menu, 50)
+    //         anime({
+    //             targets: menu,
+    //             duration: 500,
+    //             opacity: [0, 1]
+    //         });
+    
+    //     })
+    
+
+    // }
+
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        /* The viewport is less than, or equal to, 700 pixels wide */
 
         menu.classList.remove('xs-flex')
 
         btn.addEventListener('click', e => {
 
-            
+            console.log(e.currentTarget)
+
             menu.classList.toggle('xs-flex')
            
             // fadeIn(menu, 50)
@@ -98,8 +122,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     
         })
-    
-
+    } else {
+    /* The viewport is greater than 700 pixels wide */
     }
 
     /*
@@ -119,24 +143,26 @@ document.addEventListener('DOMContentLoaded', function() {
     
         }, 5000)
     
-    
-        tip.addEventListener('click', e => {
-            if (e.target.tagName === 'path' || e.target.tagName === 'svg' || e.target.tagName === 'SPAN') {
-                anime({
-                    targets: tip,
-                    duration: 1500,
-                    translateY: -20,
-                    opacity: [1, 0]
-                });
-    
-                setTimeout( function(){
-    
-                    tip.style.display = 'none'
+        if (tip != undefined || tip != null) {
             
-                }, 1600)
+            tip.addEventListener('click', e => {
+                if (e.target.tagName === 'path' || e.target.tagName === 'svg' || e.target.tagName === 'SPAN') {
+                    anime({
+                        targets: tip,
+                        duration: 1500,
+                        translateY: -20,
+                        opacity: [1, 0]
+                    });
+        
+                    setTimeout( function(){
+        
+                        tip.style.display = 'none'
                 
-            }   
-        })
+                    }, 1600)
+                    
+                }   
+            })
+        }
 
 
         /*
@@ -144,90 +170,101 @@ document.addEventListener('DOMContentLoaded', function() {
         */
         const textHero = document.getElementById('text-hero')
 
-        const mensaje = {
-            "a": "Todo para el cuidado de tus mascotas",
-            "b": "Peluqería, baños, tratamientos y asistencia en general"
-        }
-   
-       
-       // textHero.textContent = mensaje.a
-       // textHero.textContent = mensaje.b
-        let loopCompleted = 0;
-        anime({
-            targets: textHero,
-            duration: 3500,
-            translateY: [20, 0],
-            opacity: [0, 1], 
-            direction: 'normal',
-            loop: true,
-            loopComplete: function(anim) {
-                
-                loopCompleted++;
-                
-                if (loopCompleted == 1) {
-                    textHero.textContent = mensaje.b
-                }else {
-                    
-                    textHero.textContent = mensaje.a
-                }
-    
-                if(loopCompleted >= 2) {
-                    loopCompleted = 0
-                }
-                
-            }
-        
-        });
-
-     
-     
-    }
-
-    function resizeDivison() {
-
-        if(window.innerWidth > 768) {
-
-            /*
-                Animacion de titulos 
-            */
-            const textHero = document.getElementById('text-hero')
-
+        if (textHero != undefined || textHero != null) {
+            
             const mensaje = {
                 "a": "Todo para el cuidado de tus mascotas",
                 "b": "Peluqería, baños, tratamientos y asistencia en general"
             }
-    
-            let loopCompleted = 0;
-            anime({
-                targets: textHero,
-                duration: 3500,
-                translateY: [20, 0],
-                opacity: [0, 1], 
-                direction: 'normal',
-                loop: true,
-                loopComplete: function(anim) {
-                    
-                    loopCompleted++;
-                    
-                    if (loopCompleted == 1) {
-                        textHero.textContent = mensaje.b
-                    }else {
-                        
-                        textHero.textContent = mensaje.a
-                    }
+            // textHero.textContent = mensaje.a
+            // textHero.textContent = mensaje.b
+             let loopCompleted = 0;
+             anime({
+                 targets: textHero,
+                 duration: 3500,
+                 translateY: [20, 0],
+                 opacity: [0, 1], 
+                 direction: 'normal',
+                 loop: true,
+                 loopComplete: function(anim) {
+                     
+                     loopCompleted++;
+                     
+                     if (loopCompleted == 1) {
+                         textHero.textContent = mensaje.b
+                     }else {
+                         
+                         textHero.textContent = mensaje.a
+                     }
+         
+                     if(loopCompleted >= 2) {
+                         loopCompleted = 0
+                     }
+                     
+                 }
+             
+             });
+
+
+
+             function resizeDivison() {
+
+                if(window.innerWidth > 768) {
         
-                    if(loopCompleted >= 2) {
-                        loopCompleted = 0
+                    /*
+                        Animacion de titulos 
+                    */
+                    const textHero = document.getElementById('text-hero')
+        
+                    const mensaje = {
+                        "a": "Todo para el cuidado de tus mascotas",
+                        "b": "Peluqería, baños, tratamientos y asistencia en general"
                     }
-                    
-                }
             
-            });
+                    let loopCompleted = 0;
+                    anime({
+                        targets: textHero,
+                        duration: 3500,
+                        translateY: [20, 0],
+                        opacity: [0, 1], 
+                        direction: 'normal',
+                        loop: true,
+                        loopComplete: function(anim) {
+                            
+                            loopCompleted++;
+                            
+                            if (loopCompleted == 1) {
+                                textHero.textContent = mensaje.b
+                            }else {
+                                
+                                textHero.textContent = mensaje.a
+                            }
+                
+                            if(loopCompleted >= 2) {
+                                loopCompleted = 0
+                            }
+                            
+                        }
+                    
+                    });
+        
+        
+                }
+            }
+        
+
 
 
         }
+
+   
+       
+
+     
+     
     }
 
+    
     window.addEventListener('resize', resizeDivison);
 
 
@@ -259,8 +296,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+    //Control de botón up
     window.addEventListener('scroll', (e) => {
-        //Control de botón up
         // posicionScroll = window.pageYOffset;
         
         //Control del header

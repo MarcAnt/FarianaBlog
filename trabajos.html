@@ -165,8 +165,8 @@
 
     
     <footer class="p-6 bg-pink-400 text-center">
-        <h5 class="text-white">Fariana Hernandez - 
-            Cuidado de Mascotas  &copy;<span id="year"></span>
+        <h5 class="text-white">FARIPETS - 
+             PELUQUERÍA PARA PERROS Y GATOS &copy;<span id="year"></span>
         </h5>
     </footer>
 
@@ -174,9 +174,9 @@
 
         <div class="custom-modal flex justify-center items-center relative  w-full h-full"   >
 
-            <span class="text-white absolute cursor-pointer text-xl" id="btn-close" ><i class="fas fa-times"></i></span>
+            <span class="text-white absolute cursor-pointer text-xl btn-close" id="btn-close" ><i class="fas fa-times"></i></span>
             
-            <div class="absolute flex justify-center items-center rounded w-1/2 sm:w-1/2 md:w-4/5 lg:w-4/5 border-4 border-white opacity-100" style="height: 90%;" id="img-content-modal" >
+            <div class="absolute flex justify-center items-center rounded w-1/2 sm:w-1/2 md:w-4/5 lg:w-1/2 border-4 border-white opacity-100 img-content-modal" style="height: 90%;" id="img-content-modal" >
                 <img class="object-cover w-full h-full" class="img-modal" src="public/img/servicios-cat.jpg" alt="">
             </div> 
             
@@ -187,7 +187,7 @@
 
     <script src="public/js/all.min.js"></script>
     <script src="public/js/anime.min.js"></script>
-    <!-- <script src="js/scripts.js"></script> -->
+    <script src="public/js/scripts.js"></script>
 
     <script >
         const modal = document.querySelector('.modal-content'); 
@@ -242,8 +242,20 @@
                     modal.classList.toggle('hidden'); 
 
                     document.body.style.overflowY = 'hidden'
-                    document.querySelector('.cursor-pointer').style.top = 35 + 'px'
-                    document.querySelector('.cursor-pointer').style.right = 5 + '%'
+
+                    if (window.matchMedia("(max-width: 768px)").matches) {
+                        /* The viewport is less than, or equal to, 700 pixels wide */
+
+                        document.querySelector('.cursor-pointer').style.top = 15 + 'px'
+                    
+                    } else {
+                    /* The viewport is greater than 700 pixels wide */
+                        document.querySelector('.cursor-pointer').style.right = 20 + '%'
+                        document.querySelector('.cursor-pointer').style.top = 35 + 'px'
+                    }
+
+
+
                     // document.querySelector('#img-content-modal').style.top = (window.scrollY + 50) + 'px'
                     modal.style.top = window.scrollY  + 'px'
                     
